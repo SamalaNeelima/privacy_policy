@@ -5,8 +5,7 @@
   display: flex;
   align-items: center; /* Center vertically */
   position: relative;
-  justify-content: center; /* Center horizontally */
-  text-align: center;
+  text-align: left; /* Ensure the text is left-aligned */
   width: 100%;
 }
 
@@ -15,7 +14,7 @@
   top: 50%; /* Vertically center the content */
   left: 10%; /* Adjust this value to move the content to the left */
   transform: translateY(-50%); /* Adjust for vertical centering */
-  text-align: left; /* Ensure text is left-aligned */
+  width: auto; /* Make sure the content width adjusts */
 }
 
 .header-logo img {
@@ -27,7 +26,7 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center navigation items */
+  justify-content: flex-start; /* Align navigation items to the left */
 }
 
 .header-link {
@@ -59,8 +58,7 @@
   height: 3px; /* Thickness of the line */
   background-color: white;
   position: absolute;
-  left: 8%; /* Center it horizontally under the text */
-  transform: translateX(-50%);
+  left: 0; /* Center it horizontally under the text */
   top: calc(100% + 10px); /* 5px gap between the text and line */
   display: block;
 }
@@ -93,6 +91,7 @@
   .header-nav {
     font-size: 24px; /* Smaller font size */
     flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
   }
 
   .header-link {
@@ -112,15 +111,26 @@
 
   .header-content {
     left: 5%; /* Further adjust for smaller screens */
+    width: 90%; /* Ensure the content fits well on small screens */
   }
 
   .header-nav {
     font-size: 20px; /* Smaller font size */
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align links to the left */
   }
 
   .header-link {
     font-size: 0.7em; /* Smaller font size */
     margin: 5px 0; /* Adjust spacing */
+  }
+
+  .header-info {
+    font-size: 0.7em; /* Smaller font size */
+    color: rgba(255, 255, 255, 0.7); /* Less bright white color */
+    margin-bottom: 5px; /* Space between this text and the heading */
+    text-align: left; /* Left-align the breadcrumb text */
+    width: 100%; /* Ensure it takes full width on mobile */
   }
 
   .header-logo img {
