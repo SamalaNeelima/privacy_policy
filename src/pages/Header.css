@@ -12,9 +12,9 @@
 .header-content {
   position: absolute; /* Allows precise positioning */
   top: 50%; /* Vertically center the content */
-  left: 10%; /* Adjust this value to move the content to the left */
+  left: 10%; /* Adjust this value to match .content margin */
   transform: translateY(-50%); /* Adjust for vertical centering */
-  width: auto; /* Make sure the content width adjusts */
+  width: 80%; /* Make sure the content width adjusts */
 }
 
 .header-logo img {
