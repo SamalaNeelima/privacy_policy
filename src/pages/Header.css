@@ -12,6 +12,8 @@
     position: relative;
     justify-content: center; /* Center horizontally */
     text-align: center;
+    width:100%;
+    max-width:1300px;
   }
   
   .header-content {
