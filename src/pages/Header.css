@@ -111,7 +111,7 @@
   }
 
   .header-content {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
     left: 5%; /* Further adjust for smaller screens */
   }
 
