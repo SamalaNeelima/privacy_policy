@@ -5,17 +5,16 @@
   display: flex;
   align-items: center; /* Center vertically */
   position: relative;
-  text-align: left; /* Ensure the text is left-aligned */
   width: 100%;
 }
 
 .header-content {
+  width: 80%; /* Match .content width */
+  margin: 0 auto; /* Center horizontally */
   position: absolute; /* Allows precise positioning */
   top: 50%; /* Vertically center the content */
   left: 10%; /* Adjust this value to match .content margin */
   transform: translateY(-50%); /* Adjust for vertical centering */
-  width: 80%; /* Make sure the content width adjusts */
-  padding: 10px;
 }
 
 .header-logo img {
@@ -59,8 +58,8 @@
   height: 3px; /* Thickness of the line */
   background-color: white;
   position: absolute;
-  left: 0; /* Center it horizontally under the text */
-  top: calc(100% + 10px); /* 5px gap between the text and line */
+  left: 0; /* Align to left */
+  top: calc(100% + 10px); /* 10px gap between the text and line */
   display: block;
 }
 
@@ -86,6 +85,7 @@
   }
 
   .header-content {
+    width: 90%; /* Adjust width for smaller screens */
     left: 5%; /* Adjust for smaller screens */
   }
 
@@ -111,8 +111,8 @@
   }
 
   .header-content {
+    width: 90%; /* Adjust width for smaller screens */
     left: 5%; /* Further adjust for smaller screens */
-    width: 90%; /* Ensure the content fits well on small screens */
   }
 
   .header-nav {
