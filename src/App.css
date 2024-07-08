@@ -22,7 +22,9 @@ h1 {
 p {
   color: #24272C;
   font-size: 16px;
+  text-align: justify; /* Justify text */
 }
+
 
 /* Primary Headings */
 h1 {
@@ -64,50 +66,7 @@ h6 {
 
 }
 
-/* Keyframe animations */
-@keyframes fade-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(-15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Heading styles */
-.content h1,
-.content h2,
-.content h3 {
-  opacity: 0; /* Start hidden */
-  animation: fade-in-right 0.6s ease-out forwards;
-  margin-top: 20px;
-}
-
-/* Paragraph styles */
-.content p,
-.content ul {
-  opacity: 0; /* Start hidden */
-  animation: fade-up 0.6s ease-out forwards;
-  margin-top: 20px;
-}
-
-/* Add animate class when in view */
-.animate {
-  opacity: 1;
-}
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
