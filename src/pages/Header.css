@@ -15,6 +15,7 @@
   left: 10%; /* Adjust this value to match .content margin */
   transform: translateY(-50%); /* Adjust for vertical centering */
   width: 80%; /* Make sure the content width adjusts */
+  padding: 10px;
 }
 
 .header-logo img {
